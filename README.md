@@ -2,7 +2,7 @@
 
 ##  About the Challenge
 
-I decided to build **100 IoT & Embedded projects in one year (366 days)**. (Inspired by [@kritishmohapatra](https://github.com/kritishmohapatra))
+I decided to build **100 IoT & Embedded projects in one year (365 days)**. (Inspired by [@kritishmohapatra](https://github.com/kritishmohapatra))
 
 This journey started on **February 2, 2026**, and the deadline is **February 2, 2027**.
 
