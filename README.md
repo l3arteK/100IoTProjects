@@ -72,6 +72,8 @@ Because the best way to learn engineering is to:
 | 07  | RGB_Led_Web_Server          | Controlling an RGB LED via a web server                | ESP32, LED-RGB                      | ✅ Done |
 | 08  | Relay_Control               | Controlling a LED via a relay and web server           | ESP32, 5V 2-Channel Relay Module    | ✅ Done |
 | 09  | OutputState_Synchronization | Controlling a LED via a physical button and web server | ESP32, LED, Button Switch           | ✅ Done |
+| 10  | DHT11_Web_Server            | Reading temperature and humidity via a web server      | ESP32, DHT11                        | ✅ Done |
+| 11  | OLED_Display                | Displaying my nickname on an oled display              | ESP32, OLED                         | ✅ Done |
 
 ## ⭐ Follow the Journey
 
