@@ -1,16 +1,16 @@
 # 100 IoT Projects in One Year
 
-##  About the Challenge
+## About the Challenge
 
 I decided to build **100 IoT & Embedded projects in one year (365 days)**. (Inspired by [@kritishmohapatra](https://github.com/kritishmohapatra))
 
 This journey started on **February 2, 2026**, and the deadline is **February 2, 2027**.
 
 The goal of this challenge is simple:
+
 - Become better at IoT and embedded systems through consistent, hands-on practice.
 
 Instead of focusing only on theory, I learn by building real, practical projects.
-
 
 ## 🎯 Goals
 
@@ -29,7 +29,6 @@ To keep the challenge meaningful:
 - Explore different sensors, communication protocols, and platforms
 - Focus on real-world use cases
 
-
 ## 🛠️ Tech Stack (varies per project)
 
 Projects may include:
@@ -37,7 +36,7 @@ Projects may include:
 - ESP32 / STM32 / Arduino / other microcontrollers
 - Sensors & actuators
 - MQTT / HTTP / BLE / Wi-Fi
-- Embedded C / C++ 
+- Embedded C / C++
 - Home automation & edge computing
 
 ## 📅 Progress
@@ -45,13 +44,15 @@ Projects may include:
 Projects will be added continuously throughout the year.
 
 ### Each project will include:
+
 - source code
 - wiring diagrams
 
 For more complicated projects also:
+
 - documentation
 - lessons learned
-  
+
 ## 💡 Why?
 
 Because the best way to learn engineering is to:
@@ -60,23 +61,20 @@ Because the best way to learn engineering is to:
 
 ## 📂 Projects Tracker
 
-| # | Project Name | Description | Hardware | Status |
-|---|-------------|-------------|----------|----------|
-| 01 | Blink Blink | Flashing LED | ESP32  | ✅ Done  |
-| 02 | Input Output |  Switching an LED on and off | ESP32, LEDs, Button Switch  |  ✅ Done |
-| 03 | Potentiometer | Getting to know the potentiometer | ESP32, Potentiometer(10k) | ✅ Done  | 
-| 04 | PWM| Getting to know the PWM | ESP32, LEDs | ✅ Done |
-| 05 | PIR_Motion_Sensor | Motion detector | ESP32, HC-SR501 PIR, Passive Buzzer | ✅ Done |
-| 06 | Switch_Web_Server | Switching the diode via the website | ESP32, LEDs | ✅ Done | 
+| #   | Project Name                | Description                                            | Hardware                            | Status  |
+| --- | --------------------------- | ------------------------------------------------------ | ----------------------------------- | ------- |
+| 01  | Blink Blink                 | Flashing LED                                           | ESP32                               | ✅ Done |
+| 02  | Input Output                | Switching an LED on and off                            | ESP32, LEDs, Button Switch          | ✅ Done |
+| 03  | Potentiometer               | Getting to know the potentiometer                      | ESP32, Potentiometer(10k)           | ✅ Done |
+| 04  | PWM                         | Getting to know the PWM                                | ESP32, LEDs                         | ✅ Done |
+| 05  | PIR_Motion_Sensor           | Motion detector                                        | ESP32, HC-SR501 PIR, Passive Buzzer | ✅ Done |
+| 06  | Switch_Web_Server           | Switching the diode via the website                    | ESP32, LEDs                         | ✅ Done |
+| 07  | RGB_Led_Web_Server          | Controlling an RGB LED via a web server                | ESP32, LED-RGB                      | ✅ Done |
+| 08  | Relay_Control               | Controlling a LED via a relay and web server           | ESP32, 5V 2-Channel Relay Module    | ✅ Done |
+| 09  | OutputState_Synchronization | Controlling a LED via a physical button and web server | ESP32, LED, Button Switch           | ✅ Done |
 
 ## ⭐ Follow the Journey
 
 Feel free to explore the projects, learn with me, or use them as inspiration for your own builds.
 
 If you find something useful, leave a ⭐ on the repo!
-
-
-
-
-
-
