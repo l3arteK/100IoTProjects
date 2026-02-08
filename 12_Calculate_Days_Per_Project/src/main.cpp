@@ -38,7 +38,7 @@ float calculateDaysPerProject()
 void setup()
 {
   Serial.begin(115200);
-  WiFi.begin("NJU_Swiatlowod_5B9A", "EVLL2RTKK7W7");
+  WiFi.begin("NAME", "PASSWORD");
   configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   pinMode(BTN_OK, INPUT);
   pinMode(BTN_PLUS, INPUT);
