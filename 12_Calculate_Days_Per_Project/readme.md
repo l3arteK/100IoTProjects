@@ -16,7 +16,7 @@ This project is a personal productivity tool designed for the **"100 Projects in
 4. **Result Mode (Mode 1):** The OLED screen displays the exact number of days (with two decimal precision) allowed for each remaining project to meet the end-of-year goal.
 
 ## Circuit image
-![Circuit image](12_Calculate_Days_Per_Project/circuit_images/circuit_image.png)
+![Circuit image](circuit_images/circuit_image.png)
 
 
 ## Hardware Requirements
