@@ -73,9 +73,12 @@ void drawing()
   printDigits(minutesToDisplay, (mode == 2 || mode == 4) || alarmActive);
 
   display.setTextSize(1);
-  if (seconds < 10)
-    display.print("0");
-  display.print(seconds);
+  if (displayTime())
+  {
+    if (seconds < 10)
+      display.print("0");
+    display.print(seconds);
+  }
 
   if (alarmIsOn)
   {
