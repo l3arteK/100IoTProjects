@@ -71,6 +71,7 @@ For more complicated projects also:
 | 12  | Calculate_Days_Per_Project  | Calculating and displaying the number of days for each project | ESP32, OLED, Button Switch                     | ✅ Done |
 | 13  | Mini_Paint                  | Drawing on oled using buttons                                  | ESP32, OLED, Button Switch, Potentiometer(10k) | ✅ Done |
 | 14  | Obstacle_Avoidance          | Detecting obstacle                                             | ESP32, obstacle avoidance, Active Buzzer       | ✅ Done |
+| 15  | Clock_With_Alarm            | Simple digital clock with alarm function                       | ESP32, OLED, Button Switch, Active Buzzer      | ✅ Done |
 
 ## ⭐ Follow the Journey
 
