@@ -73,6 +73,7 @@ For more complicated projects also:
 | 14  | Obstacle_Avoidance          | Detecting obstacle                                                                   | ESP32, obstacle avoidance, Active Buzzer       | ✅ Done |
 | 15  | Clock_With_Alarm            | Simple digital clock with alarm function                                             | ESP32, OLED, Button Switch, Active Buzzer      | ✅ Done |
 | 16  | BLE_Transmiter_And_Receiver | Wireless weather station using BLE Advertising to send DHT22 data between two ESP32s | ESP32, OLED, LED, DHT22                        | ✅ Done |
+| 17  | Multi_Chat_BLE              | Multi-user BLE GATT chat hub with OLED display and circular buffer message scrolling | ESP32, OLED, Button Switch                     | ✅ Done |
 
 ## ⭐ Follow the Journey
 
