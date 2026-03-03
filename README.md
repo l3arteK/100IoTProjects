@@ -76,6 +76,7 @@ For more complicated projects also:
 | 17  | Multi_Chat_BLE              | Multi-user BLE GATT chat hub with OLED display and circular buffer message scrolling                     | ESP32, OLED, Button Switch                     | ✅ Done |
 | 18  | First_RTOS                  | Demonstrates safe access to a shared resource (Serial output) using a mutex                              | ESP32                                          | ✅ Done |
 | 19  | Binary_Counting             | 3-bit binary counter where a counting semaphore tracks button presses and automatically decays over time | ESP32, LED, Button Switch                      | ✅ Done |
+| 20  | Ping_Pong                   | A two-player Pong game built on ESP32 using FreeRTOS, displayed on a 128×64 OLED screen                  | ESP32, OLED, Button Switch                     | ✅ Done |
 
 ## ⭐ Follow the Journey
 
