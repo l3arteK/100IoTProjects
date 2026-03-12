@@ -9,6 +9,14 @@
 **Required pace:** 4.10 days / project
 <!-- STATS_END -->
 
+## 🎥 Project Demo Videos
+
+Short demo videos of the projects are available here:
+
+👉 **[Google Drive – IoT Projects Demo Videos](https://drive.google.com/file/d/1UqpV63TT4pNyY8f5CEHxOvO9u3svxIzk/view?usp=drive_link)**
+
+The folder contains short clips showing how each project works in practice
+
 ## About the Challenge
 
 I decided to build **100 IoT & Embedded projects in one year (365 days)**. (Inspired by [@kritishmohapatra](https://github.com/kritishmohapatra))
