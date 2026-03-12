@@ -50,12 +50,12 @@ jobs:
       - name: Update README
         run: |
           DAYS_PER_PROJECT=$(printf "%.2f" ${{ steps.calc.outputs.days_per_project }})
-
-          STATS=$(printf "Projects done: %s\nProjects remaining: %s\nDays left: %s\nDays per project needed: %s\n" \
-          "${{ steps.calc.outputs.done }}" \
-          "${{ steps.calc.outputs.remaining }}" \
-          "${{ steps.calc.outputs.days_left }}" \
-          "$DAYS_PER_PROJECT")
+          
+            STATS=$(printf "## 📊 IoT Challenge Stats\n\n**Projects done:** %s  \n**Projects remaining:** %s\n\n**Days left:** %s  \n**Required pace:** %s days / project\n" \
+            "${{ steps.calc.outputs.done }}" \
+            "${{ steps.calc.outputs.remaining }}" \
+            "${{ steps.calc.outputs.days_left }}" \
+            "$DAYS_PER_PROJECT")
 
           awk -v stats="$STATS" '
           /<!-- STATS_START -->/ {print; print stats; skip=1; next}
