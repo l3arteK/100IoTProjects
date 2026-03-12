@@ -46,18 +46,16 @@ jobs:
           echo "remaining=$REMAINING" >> $GITHUB_OUTPUT
           echo "days_left=$DAYS_LEFT" >> $GITHUB_OUTPUT
           echo "days_per_project=$DAYS_PER_PROJECT" >> $GITHUB_OUTPUT
-
+          
       - name: Update README
         run: |
           DAYS_PER_PROJECT=$(printf "%.2f" ${{ steps.calc.outputs.days_per_project }})
 
-          STATS=$(cat <<EOF
-Projects done: ${{ steps.calc.outputs.done }}
-Projects remaining: ${{ steps.calc.outputs.remaining }}
-Days left: ${{ steps.calc.outputs.days_left }}
-Days per project needed: $DAYS_PER_PROJECT
-EOF
-)
+          STATS=$(printf "Projects done: %s\nProjects remaining: %s\nDays left: %s\nDays per project needed: %s\n" \
+          "${{ steps.calc.outputs.done }}" \
+          "${{ steps.calc.outputs.remaining }}" \
+          "${{ steps.calc.outputs.days_left }}" \
+          "$DAYS_PER_PROJECT")
 
           awk -v stats="$STATS" '
           /<!-- STATS_START -->/ {print; print stats; skip=1; next}
