@@ -2,6 +2,7 @@ name: IoT Project Stats
 
 on:
   push:
+  workflow_dispatch:
   schedule:
     - cron: "0 6 * * *"
 
@@ -16,7 +17,11 @@ jobs:
       - name: Count projects
         id: count
         run: |
-          COUNT=$(find . -maxdepth 1 -type d ! -name "." ! -name ".git" ! -name ".github" | wc -l)
+          COUNT=$(find . -maxdepth 1 -type d \
+          ! -name "." \
+          ! -name ".git" \
+          ! -name ".github" | wc -l)
+
           echo "count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Calculate stats
@@ -44,10 +49,23 @@ jobs:
 
       - name: Update README
         run: |
-          sed -i "s/PROJECTS_DONE:.*/PROJECTS_DONE: ${{ steps.calc.outputs.done }}/" README.md
-          sed -i "s/PROJECTS_LEFT:.*/PROJECTS_LEFT: ${{ steps.calc.outputs.remaining }}/" README.md
-          sed -i "s/DAYS_LEFT:.*/DAYS_LEFT: ${{ steps.calc.outputs.days_left }}/" README.md
-          sed -i "s/DAYS_PER_PROJECT:.*/DAYS_PER_PROJECT: ${{ steps.calc.outputs.days_per_project }}/" README.md
+          DAYS_PER_PROJECT=$(printf "%.2f" ${{ steps.calc.outputs.days_per_project }})
+
+          STATS=$(cat <<EOF
+Projects done: ${{ steps.calc.outputs.done }}
+Projects remaining: ${{ steps.calc.outputs.remaining }}
+Days left: ${{ steps.calc.outputs.days_left }}
+Days per project needed: $DAYS_PER_PROJECT
+EOF
+)
+
+          awk -v stats="$STATS" '
+          /<!-- STATS_START -->/ {print; print stats; skip=1; next}
+          /<!-- STATS_END -->/ {skip=0}
+          !skip
+          ' README.md > README.tmp
+
+          mv README.tmp README.md
 
       - name: Commit changes
         run: |
