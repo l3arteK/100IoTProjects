@@ -1,0 +1,58 @@
+name: IoT Project Stats
+
+on:
+  push:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Count projects
+        id: count
+        run: |
+          COUNT=$(find . -maxdepth 1 -type d ! -name "." ! -name ".git" ! -name ".github" | wc -l)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Calculate stats
+        id: calc
+        run: |
+          PROJECTS_DONE=${{ steps.count.outputs.count }}
+          TARGET=100
+          REMAINING=$((TARGET - PROJECTS_DONE))
+
+          TODAY=$(date +%s)
+          DEADLINE=$(date -d "2027-01-31" +%s)
+
+          DAYS_LEFT=$(( (DEADLINE - TODAY) / 86400 ))
+
+          if [ "$REMAINING" -gt 0 ]; then
+            DAYS_PER_PROJECT=$(echo "$DAYS_LEFT / $REMAINING" | bc -l)
+          else
+            DAYS_PER_PROJECT=0
+          fi
+
+          echo "done=$PROJECTS_DONE" >> $GITHUB_OUTPUT
+          echo "remaining=$REMAINING" >> $GITHUB_OUTPUT
+          echo "days_left=$DAYS_LEFT" >> $GITHUB_OUTPUT
+          echo "days_per_project=$DAYS_PER_PROJECT" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        run: |
+          sed -i "s/PROJECTS_DONE:.*/PROJECTS_DONE: ${{ steps.calc.outputs.done }}/" README.md
+          sed -i "s/PROJECTS_LEFT:.*/PROJECTS_LEFT: ${{ steps.calc.outputs.remaining }}/" README.md
+          sed -i "s/DAYS_LEFT:.*/DAYS_LEFT: ${{ steps.calc.outputs.days_left }}/" README.md
+          sed -i "s/DAYS_PER_PROJECT:.*/DAYS_PER_PROJECT: ${{ steps.calc.outputs.days_per_project }}/" README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "update project stats" || exit 0
+          git push
