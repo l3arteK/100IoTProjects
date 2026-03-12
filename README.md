@@ -1,8 +1,8 @@
 # 100 IoT Projects in One Year
-Projects done: PROJECTS_DONE: 0  
-Projects remaining: PROJECTS_LEFT: 0  
-Days left: DAYS_LEFT: 0  
-Days per project needed: DAYS_PER_PROJECT: 0
+Projects done: PROJECTS_DONE: 21
+Projects remaining: PROJECTS_LEFT: 79
+Days left: DAYS_LEFT: 324
+Days per project needed: DAYS_PER_PROJECT: 4.10126582278481012658
 
 ## About the Challenge
 
