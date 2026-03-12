@@ -3,6 +3,7 @@ Projects done: PROJECTS_DONE: 0
 Projects remaining: PROJECTS_LEFT: 0  
 Days left: DAYS_LEFT: 0  
 Days per project needed: DAYS_PER_PROJECT: 0
+
 ## About the Challenge
 
 I decided to build **100 IoT & Embedded projects in one year (365 days)**. (Inspired by [@kritishmohapatra](https://github.com/kritishmohapatra))
