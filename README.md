@@ -1,5 +1,7 @@
 # 100 IoT Projects in One Year
+
 <!-- STATS_START -->
+
 ## 📊 IoT Challenge Stats
 
 **Projects done:** 21  
@@ -7,6 +9,7 @@
 
 **Days left:** 320  
 **Required pace:** 4.05 days / project
+
 <!-- STATS_END -->
 
 ## 🎥 Project Demo Videos
@@ -95,6 +98,7 @@ For more complicated projects also:
 | 19  | Binary_Counting             | 3-bit binary counter where a counting semaphore tracks button presses and automatically decays over time                  | ESP32, LED, Button Switch                      | ✅ Done |
 | 20  | Ping_Pong                   | A two-player Pong game built on ESP32 using FreeRTOS, displayed on a 128×64 OLED screen                                   | ESP32, OLED, Button Switch                     | ✅ Done |
 | 21  | RGB_LED_Adjusted            | The potentiometer controls brightness (0–255) of the selected color channel, while the button switches between R → B → G. | ESP32, OLED, Button Switch, RGB LED            | ✅ Done |
+| 22  | Edge_AI_Climate_Classifier  | Simple environmental condition classifier using TinyML                                                                    | ESP32, DHT11                                   | ✅ Done |
 
 ## ⭐ Follow the Journey
 
