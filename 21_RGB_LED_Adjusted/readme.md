@@ -1,4 +1,4 @@
-# RGB LED Controller (ESP32 + FreeRTOS)
+# #21 RGB LED Controller (ESP32 + FreeRTOS)
 
 Simple RGB LED controller using **ESP32**, **FreeRTOS**, a **potentiometer**, **push button**, and a **128×64 OLED display**.
 The potentiometer controls brightness (0–255) of the selected color channel, while the button switches between **R → B → G**.

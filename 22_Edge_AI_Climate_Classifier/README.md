@@ -1,4 +1,4 @@
-# ESP32 Edge AI Climate Classifier
+# #22 ESP32 Edge AI Climate Classifier
 
 Simple environmental condition classifier using **ESP32**, **Edge Impulse**, and a **DHT11** sensor.
 The sensor reads temperature and humidity, which are passed to a TinyML model that classifies the current environmental condition into one of 5 categories.
