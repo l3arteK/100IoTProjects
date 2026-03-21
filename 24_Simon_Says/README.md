@@ -1,4 +1,4 @@
-# Rhythm Memory Game (ESP32 + OLED)
+# #24 Simon Says
 
 Simple rhythm-based memory game using **ESP32**, a **push button**, an **LED**, and a **128×64 OLED display**.
 The device plays a random light pattern, and the player must reproduce it by pressing the button in the same rhythm. The accuracy of the reproduction is displayed at the end.
