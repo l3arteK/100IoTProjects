@@ -1,15 +1,13 @@
 # 100 IoT Projects in One Year
 
 <!-- STATS_START -->
-
 ## 📊 IoT Challenge Stats
 
 **Projects done:** 24  
 **Projects remaining:** 76
 
-**Days left:** 315  
-**Required pace:** 4.14 days / project
-
+**Days left:** 296  
+**Required pace:** 3.89 days / project
 <!-- STATS_END -->
 
 ## 🎥 Project Demo Videos
