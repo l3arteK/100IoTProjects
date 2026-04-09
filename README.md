@@ -3,11 +3,11 @@
 <!-- STATS_START -->
 ## 📊 IoT Challenge Stats
 
-**Projects done:** 24  
-**Projects remaining:** 76
+**Projects done:** 25  
+**Projects remaining:** 75
 
 **Days left:** 296  
-**Required pace:** 3.89 days / project
+**Required pace:** 3.95 days / project
 <!-- STATS_END -->
 
 ## 🎥 Project Demo Videos
