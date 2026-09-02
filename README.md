@@ -6,8 +6,8 @@
 **Projects done:** 25  
 **Projects remaining:** 75
 
-**Days left:** 151  
-**Required pace:** 2.01 days / project
+**Days left:** 150  
+**Required pace:** 2.00 days / project
 <!-- STATS_END -->
 
 ## 🎥 Project Demo Videos
